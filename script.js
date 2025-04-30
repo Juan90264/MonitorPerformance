@@ -63,7 +63,7 @@
         // Function to update the metric
         function updateMetric(metricName, value) {
             if (metrics[metricName]) {
-                let unit = metricName === 'CLS' ? '' : 'ms'; // CLS é sem milissegundos
+                let unit = metricName === 'CLS' ? '' : 'ms'; // CLS is without milliseconds
                 metrics[metricName].textContent = ${metricName} (${getFullName(metricName)}): ${value.toFixed(2)}${unit};
             }
         }
